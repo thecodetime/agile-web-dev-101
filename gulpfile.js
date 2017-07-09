@@ -7,9 +7,10 @@ var sourcemaps = require('gulp-sourcemaps');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 var watch = require('gulp-watch');
+var exec = require('child_process').exec;
 
 gulp.task('sass', () => {
-  return gulp.src('./assets/scss/main.scss')
+  return gulp.src('./dist/assets/scss/main.scss')
     .pipe(sourcemaps.init())
     .pipe(plumber())
     .pipe(sass({
@@ -18,27 +19,39 @@ gulp.task('sass', () => {
     .pipe(rename('bundle.css'))
     .pipe(autoprefixer())
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('./assets/css'));
+    .pipe(gulp.dest('./dist/assets/css'));
 });
 
 gulp.task('sass:watch', () => {
-  watch('./assets/scss/**/*.scss', () => {
+  watch('./dist/assets/scss/**/*.scss', () => {
     gulp.start('sass');
   });
 });
 
 gulp.task('js', (cb) => {
-  return gulp.src('./assets/js/src/**/*.js')
+  return gulp.src('./dist/assets/js/src/**/*.js')
     .pipe(sourcemaps.init())
     .pipe(concat('bundle.js'))
     .pipe(uglify())
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('./assets/js/dist'));
+    .pipe(gulp.dest('./dist/assets/js/dist'));
 });
 
 gulp.task('js:watch', () => {
-  watch('./assets/js/src/**/*.js', () => {
+  watch('./dist/assets/js/src/**/*.js', () => {
     gulp.start('js');
+  });
+});
+
+gulp.task('template', (cb) => {
+  exec('node template', function(err, stdout, stderr) {
+    cb(err);
+  });
+});
+
+gulp.task('template:watch', (cb) => {
+  watch('./templates/**/*.hbs', () => {
+    gulp.start('template');
   });
 });
 

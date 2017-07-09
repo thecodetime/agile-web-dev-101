@@ -1,1 +1,0 @@
-{"version":3,"sources":["home.js","main.js"],"names":["console","log"],"mappings":"AAAAA,QAAAC,IAAA,wBCAAD,QAAAC,IAAA","file":"bundle.js","sourcesContent":["console.log('this is from home.js');\n","console.log('this is from main.js');\n"]}
