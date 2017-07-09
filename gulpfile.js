@@ -55,4 +55,10 @@ gulp.task('template:watch', (cb) => {
   });
 });
 
-gulp.task('default', ['sass', 'js', 'sass:watch', 'js:watch']);
+gulp.task('default',
+          ['sass',
+            'js',
+            'template',
+            'sass:watch',
+            'js:watch',
+            'template:watch' ]);
