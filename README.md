@@ -22,3 +22,6 @@
  3. [Git](https://git-scm.com/) (Source control)
  4. (Windows only) [Mongoose Web Server](https://cesanta.com/binary.html)
 
+### Workshop Files
+ 1. Auto Shop - [Autoland](https://s3-ap-southeast-1.amazonaws.com/agile-web-dev-101/workshop/autoland.zip)
+ 2. Sneaker Shop - [Sneaklick](https://s3-ap-southeast-1.amazonaws.com/agile-web-dev-101/workshop/sneaklick.zip)
