@@ -1,0 +1,68 @@
+{
+  "products": [
+    {
+      "name": "Nike Metcon",
+      "brand": "Nike",
+      "model": "Metcon",
+      "price": "2,500",
+      "year": "2016",
+      "image": "nike_metcon.png"
+    },
+    {
+      "name": "Adidas NMD XR1",
+      "brand": "Adidas",
+      "model": "NMD XR1",
+      "price": "8,200",
+      "year": "2017",
+      "image": "adidas_nmd_xr1.png"
+    },
+    {
+      "name": "Nike Air Force",
+      "brand": "Nike",
+      "model": "Air Force",
+      "price": "5,000",
+      "year": "2015",
+      "image": "nike_air_force_one.png"
+    },
+    {
+      "name": "Nike Max 2017",
+      "brand": "Nike",
+      "model": "Max",
+      "price": "3,000",
+      "year": "2017",
+      "image": "nike_air_max_2017.png"
+    },
+    {
+      "name": "Nike Presto",
+      "brand": "Nike",
+      "model": "Presto",
+      "price": "5,300",
+      "year": "2016",
+      "image": "nike_air_presto.png"
+    },
+    {
+      "name": "Nike Air Zoom",
+      "brand": "Nike",
+      "model": "Air Zoom",
+      "price": "8,900",
+      "year": "2017",
+      "image": "nike_air_zoom.png"
+    },
+    {
+      "name": "Reebok Crossfit",
+      "brand": "Reebok",
+      "model": "Crossfit",
+      "price": "7,900",
+      "year": "2016",
+      "image": "reebok_crossfit.png"
+    },
+    {
+      "name": "Reebok Zoku Runner",
+      "brand": "Reebok",
+      "model": "Zoku Runner",
+      "price": "6,900",
+      "year": "2017",
+      "image": "reebok_zoku_runner.png"
+    }
+  ]
+}
