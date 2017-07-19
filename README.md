@@ -28,3 +28,12 @@
 
 ### Slides
  * [Agile Web Developer 101](https://docs.google.com/presentation/d/1eAJDLfFmBTXBJLK4_O41bZEbRw5G9uOo8EOOvq52yT4/edit?usp=sharing)
+
+### Cloud
+
+```sh
+ $ ssh lion@ec2-13-229-58-3.ap-southeast-1.compute.amazonaws.com
+ $ ssh tiger@ec2-13-229-58-3.ap-southeast-1.compute.amazonaws.com
+```
+
+
