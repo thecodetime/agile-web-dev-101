@@ -1,1 +1,1 @@
-console.log('this is from main.js');
+console.log('Welcome Agile Web Developer 101');

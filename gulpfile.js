@@ -31,6 +31,7 @@ gulp.task('sass:watch', () => {
 gulp.task('js', (cb) => {
   return gulp.src('./dist/assets/js/src/**/*.js')
     .pipe(sourcemaps.init())
+    .pipe(plumber())
     .pipe(concat('bundle.js'))
     .pipe(uglify())
     .pipe(sourcemaps.write('.'))
@@ -50,7 +51,10 @@ gulp.task('template', (cb) => {
 });
 
 gulp.task('template:watch', (cb) => {
-  watch('./templates/**/*.hbs', () => {
+  watch([
+    './templates/**/*.hbs',
+    './templates/data/*.json'
+  ], () => {
     gulp.start('template');
   });
 });
