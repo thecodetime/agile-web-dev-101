@@ -25,3 +25,6 @@
 ### Workshop Files
  1. Auto Shop - [Autoland](https://s3-ap-southeast-1.amazonaws.com/agile-web-dev-101/workshop/autoland.zip)
  2. Sneaker Shop - [Sneaklick](https://s3-ap-southeast-1.amazonaws.com/agile-web-dev-101/workshop/sneaklick.zip)
+
+### Slides
+ * [Agile Web Developer 101](https://docs.google.com/presentation/d/1eAJDLfFmBTXBJLK4_O41bZEbRw5G9uOo8EOOvq52yT4/edit?usp=sharing)
