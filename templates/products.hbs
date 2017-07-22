@@ -1,0 +1,30 @@
+<div id="products" class="container">
+  <h3 class="mt-5">Products</h3>
+  <div class="text-center">
+    <input id="product-search-input"
+           type="text" class="form-control"
+    placeholder="enter query">
+  </div>
+  <div class="row no-gutters my-5">
+    {{#each products}}
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="product"
+            data-brand="{{brand}}"
+            data-model="{{model}}"
+            data-price="{{price}}"
+            data-year="{{year}}">
+          <div class="p-2 pl-3 name">
+            <div>{{name}}</div>
+            <small class="price">{{price}} THB</small>
+            <div class="over-circle"></div>
+          </div>
+          <div class="image-wrapper">
+            <img src="/assets/images/shoes/{{image}}"
+                 alt="{{name}}" class="img-fluid">
+            <div class="year">{{year}}</div>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>

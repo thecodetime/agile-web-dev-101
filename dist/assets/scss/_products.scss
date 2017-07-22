@@ -1,0 +1,67 @@
+$grey-100: #e2e2e2;
+$grey-200: #828282;
+$grey-300: #F7F7F7;
+$grey-400: #AFAFAF;
+$green-100: #D7E6E1;
+$green-200: #E7E7D6;
+$pink-100: #E8D5D7;
+$purple-100: #D5DBE8;
+
+@mixin bg-color($color-code) {
+  background-color: $color-code;
+}
+
+#products {
+  .product {
+    border: 1px solid $grey-100;
+  }
+  .name {
+    position: relative;
+    line-height: 1.25em;
+    .price {
+      color: $grey-200;
+    }
+  }
+  .over-circle {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -1.5em;
+    right: 1.5em;
+  }
+  .image-wrapper {
+    padding: 1em;
+    text-align: center;
+  }
+  .year {
+    color: $grey-400;
+    font-size: 0.75em;
+    bottom: 0;
+  }
+  .grey-100 {
+    @include bg-color($grey-100);
+  }
+  .grey-200 {
+    @include bg-color($grey-200);
+  }
+  .grey-300 {
+    @include bg-color($grey-300);
+  }
+  .green-100 {
+    @include bg-color($green-100);
+  }
+  .green-200 {
+    @include bg-color($green-200);
+  }
+  .pink-100 {
+    @include bg-color($pink-100);
+  }
+  .purple-100 {
+    @include bg-color($purple-100);
+  }
+  .white {
+    @include bg-color(#FFF);
+  }
+}
+
