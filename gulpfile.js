@@ -10,7 +10,7 @@ var watch = require('gulp-watch');
 var exec = require('child_process').exec;
 
 gulp.task('sass', () => {
-  return gulp.src('./dist/assets/scss/main.scss')
+  return gulp.src('./templates/scss/main.scss')
     .pipe(sourcemaps.init())
     .pipe(plumber())
     .pipe(sass({
@@ -23,23 +23,24 @@ gulp.task('sass', () => {
 });
 
 gulp.task('sass:watch', () => {
-  watch('./dist/assets/scss/**/*.scss', () => {
+  watch('./templates/scss/**/*.scss', () => {
     gulp.start('sass');
   });
 });
 
 gulp.task('js', (cb) => {
-  return gulp.src('./dist/assets/js/src/**/*.js')
+  // return gulp.src('./dist/assets/js/src#<{(||)}>#*.js')
+  return gulp.src('./templates/js/**/*.js')
     .pipe(sourcemaps.init())
     .pipe(plumber())
     .pipe(concat('bundle.js'))
     .pipe(uglify())
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('./dist/assets/js/dist'));
+    .pipe(gulp.dest('./dist/assets/js'));
 });
 
 gulp.task('js:watch', () => {
-  watch('./dist/assets/js/src/**/*.js', () => {
+  watch('./templates/js/**/*.js', () => {
     gulp.start('js');
   });
 });
